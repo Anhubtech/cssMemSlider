@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+
+body
+{
+    /* background: linear-gradient(180deg, rgb(152, 207, 195), rgb(86, 181, 184) 24%, rgb(29, 15, 32) 90%); */
+     overflow: hidden;  
+     background: linear-gradient(180deg, rgb(152, 207, 195) 6%, rgb(86, 181, 184) 20%, rgb(29, 15, 32) 80%);
+     margin: 0 auto;
+     width: 1024px;
+     height: 768px;    
+}
+
+ header
+{ 
+    display: flex;
+    margin: 0 auto;
+    justify-content: center; 
+}
+ 
+a
+{
+    text-decoration:none;
+    color: rgb(255, 110, 129);
+    font-family: 'Lora', serif;
+}
+
+a:hover
+{
+    color: rgb(243, 131, 237);
+} 
+
+h1
+{
+    font-family: 'Lora', serif;
+    color: rgb(92, 23, 88);
+    margin-left: 100px;
+}
+
+ .wrapper {
+    height: 600px;
+    margin-top: 10px;
+    margin-left: 200px;
+    width: 900px;
+} 
+
+#memes1:checked~.myslider>.memes1,
+#memes2:checked~.myslider>.memes2,
+#memes3:checked~.myslider>.memes3,
+#memes4:checked~.myslider>.memes4,
+#memes5:checked~.myslider>.memes5,
+#memes6:checked~.myslider>.memes6,
+#memes7:checked~.myslider>.memes7,
+#memes8:checked~.myslider>.memes8
+{
+    opacity: 1;
+    z-index: auto;
+    transform: scale(1);
+} 
+
+.myslider 
+{
+    height: inherit; 
+    width: inherit;
+    overflow: hidden; 
+} 
+
+.slide
+{
+    position: absolute; 
+    height: inherit;
+    width: inherit; 
+    opacity: 0;
+    z-index: 0;
+    transition: transform ease-in-out .5s, opacity ease-in-out .5s;  
+} 
+
+.mem 
+{
+    height: auto;
+    max-width: 30%;   
+}
+
+.mytitles 
+{
+    height: 100px;
+    width: 800px;
+    margin-top: -230px;
+    position: relative; 
+    font-size: 30px;
+    font-family: 'Lora', serif;
+    color: antiquewhite;
+}
+
+.title 
+{
+    position: absolute;  
+    opacity: 0;
+    z-index: 0; 
+    transition: transform ease-in-out .5s, opacity ease-in-out .5s;   
+}
+
+#memes1:checked~.mytitles>.title1,
+#memes2:checked~.mytitles>.title2,
+#memes3:checked~.mytitles>.title3,
+#memes4:checked~.mytitles>.title4,
+#memes5:checked~.mytitles>.title5,
+#memes6:checked~.mytitles>.title6,
+#memes7:checked~.mytitles>.title7,
+#memes8:checked~.mytitles>.title8
+{
+    opacity: 1;
+    z-index: auto;
+    transform: scale(1);
+}
+
+
+ footer
+{
+    /* background-color: rgb(0, 136, 91);  */
+    padding: 20px;
+    margin-top: -130px ;
+    margin-left: -190px;
+
+} 
